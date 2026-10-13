@@ -1,17 +1,13 @@
+import { useState } from "react";
 import { useNavigate } from "react-router";
 import { StatusBar } from "../../app/components/StatusBar";
+import { IconTile, GridIcon, AllergyIcon, DropIcon, ThermometerIcon, HeartIcon, ThyroidIcon } from "../../app/components/PremiumIcons";
 import svgPaths from "./svg-1cy9r5xgtn";
 import imgImage10 from "./cfd573ee1adefc419b43c48ea5895bdeda84ae74.png";
 import imgRectangle from "./4faa0b26208ed3c9ed281854e2b22e384bc5ff31.png";
 import imgRectangle1 from "./b8d6bb4c995efcaab809fe7dc6e41d9e46ec8eb3.png";
 import imgRectangle2 from "./61a3a74334fc54d53ef841d7044d0d774b983d9f.png";
 import imgRectangle3 from "./31bcba805d2e0ea8eb9c6d3e7802555e3e6a447c.png";
-import imgRectangle4 from "./a4dbbc40bd0f8ccac225a53e440a5ad9c0bde600.png";
-import imgRectangle5 from "./7eb5587d1d0859a847529e82f9733189dad25335.png";
-import imgRectangle6 from "./c1cc645ea07e09d236b1d98491517be81cf83039.png";
-import imgRectangle7 from "./acdb000be0577dc04ad705bcb0b9d5a6573270a5.png";
-import imgRectangle8 from "./e2608ce611de1991219e41dc443e98b20ceb27c0.png";
-import imgRectangle9 from "./77c6f089cd2251ee1d416350533cff33fb8746a7.png";
 import imgRectangle10 from "./ebeb1c8afe52486405af6469f3c9c2161b45cafb.png";
 import imgRectangle11 from "./92591079146e27cea8940201aa0f26b595444508.png";
 import imgRectangle12 from "./c1c551673b78fd99138a93c97585624779f05ef0.png";
@@ -253,104 +249,40 @@ function Frame11() {
   );
 }
 
-function Frame15() {
-  return (
-    <div className="absolute content-stretch flex flex-col gap-[2px] items-center left-[5px] top-[2px] w-[39px]">
-      <div className="h-[28px] relative shrink-0 w-full" data-name="Rectangle">
-        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgRectangle4} />
-      </div>
-      <p className="[word-break:break-word] font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] not-italic relative shrink-0 text-[8px] text-black text-center w-full">All Concerns</p>
-    </div>
-  );
-}
+const concernTabs = [
+  { label: "All", Icon: GridIcon },
+  { label: "Allergies", Icon: AllergyIcon },
+  { label: "Diabetes", Icon: DropIcon },
+  { label: "Fever", Icon: ThermometerIcon },
+  { label: "Heart", Icon: HeartIcon },
+  { label: "Thyroid", Icon: ThyroidIcon },
+];
 
-function Frame13() {
+function ConcernTabs() {
+  const [active, setActive] = useState(0);
   return (
-    <div className="absolute bg-[#fff2df] h-[58px] left-[20px] rounded-[8px] top-[526px] w-[50px]">
-      <div className="overflow-clip relative rounded-[inherit] size-full">
-        <Frame15 />
-      </div>
-      <div aria-hidden className="absolute border border-[#ffeacc] border-solid inset-[-1px] pointer-events-none rounded-[9px]" />
-    </div>
-  );
-}
-
-function Frame14() {
-  return (
-    <div className="absolute bg-white h-[58px] left-[80px] rounded-[8px] top-[526px] w-[50px]">
-      <div className="overflow-clip relative rounded-[inherit] size-full">
-        <div className="-translate-x-1/2 absolute left-1/2 size-[28px] top-[6px]" data-name="Rectangle">
-          <div className="absolute inset-0 overflow-hidden pointer-events-none">
-            <img alt="" className="absolute h-[179.59%] left-[-44.41%] max-w-none top-[-38.32%] w-[190.57%]" src={imgRectangle5} />
-          </div>
-        </div>
-        <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] left-[25.5px] not-italic text-[8px] text-black text-center top-[36px] w-[39px]">Allergies</p>
-      </div>
-      <div aria-hidden className="absolute border border-[#f2f2f2] border-solid inset-[-1px] pointer-events-none rounded-[9px]" />
-    </div>
-  );
-}
-
-function Frame16() {
-  return (
-    <div className="absolute bg-white h-[58px] left-[calc(20%+62px)] rounded-[8px] top-[526px] w-[50px]">
-      <div className="overflow-clip relative rounded-[inherit] size-full">
-        <div className="-translate-x-1/2 absolute left-1/2 size-[28px] top-[6px]" data-name="Rectangle">
-          <div className="absolute inset-0 overflow-hidden pointer-events-none">
-            <img alt="" className="absolute h-[183.54%] left-[-49.64%] max-w-none top-[-41.25%] w-[202.3%]" src={imgRectangle6} />
-          </div>
-        </div>
-        <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] left-[25.5px] not-italic text-[8px] text-black text-center top-[36px] w-[39px]">Diabetes</p>
-      </div>
-      <div aria-hidden className="absolute border border-[#f2f2f2] border-solid inset-[-1px] pointer-events-none rounded-[9px]" />
-    </div>
-  );
-}
-
-function Frame17() {
-  return (
-    <div className="absolute bg-white h-[58px] left-[calc(40%+44px)] rounded-[8px] top-[526px] w-[50px]">
-      <div className="overflow-clip relative rounded-[inherit] size-full">
-        <div className="-translate-x-1/2 absolute left-1/2 size-[28px] top-[5px]" data-name="Rectangle">
-          <div className="absolute inset-0 overflow-hidden pointer-events-none">
-            <img alt="" className="absolute h-[166.2%] left-[-53%] max-w-none top-[-22.49%] w-[205.88%]" src={imgRectangle7} />
-          </div>
-        </div>
-        <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] left-[25.5px] not-italic text-[8px] text-black text-center top-[35px] w-[39px]">Fever</p>
-      </div>
-      <div aria-hidden className="absolute border border-[#f2f2f2] border-solid inset-[-1px] pointer-events-none rounded-[9px]" />
-    </div>
-  );
-}
-
-function Frame18() {
-  return (
-    <div className="absolute bg-white h-[58px] left-[calc(60%+26px)] rounded-[8px] top-[526px] w-[50px]">
-      <div className="overflow-clip relative rounded-[inherit] size-full">
-        <div className="-translate-x-1/2 absolute left-1/2 size-[28px] top-[5px]" data-name="Rectangle">
-          <div className="absolute inset-0 overflow-hidden pointer-events-none">
-            <img alt="" className="absolute h-[171.43%] left-[-47.72%] max-w-none top-[-26.19%] w-[196.79%]" src={imgRectangle8} />
-          </div>
-        </div>
-        <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] left-[25.5px] not-italic text-[8px] text-black text-center top-[35px] w-[39px]">Heart</p>
-      </div>
-      <div aria-hidden className="absolute border border-[#f2f2f2] border-solid inset-[-1px] pointer-events-none rounded-[9px]" />
-    </div>
-  );
-}
-
-function Frame19() {
-  return (
-    <div className="absolute bg-white h-[58px] left-[calc(80%+8px)] rounded-[8px] top-[526px] w-[50px]">
-      <div className="overflow-clip relative rounded-[inherit] size-full">
-        <div className="-translate-x-1/2 absolute left-1/2 size-[28px] top-[6px]" data-name="Rectangle">
-          <div className="absolute inset-0 overflow-hidden pointer-events-none">
-            <img alt="" className="absolute left-[-29.06%] max-w-none size-[158.21%] top-[-26.93%]" src={imgRectangle9} />
-          </div>
-        </div>
-        <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] left-[25.5px] not-italic text-[8px] text-black text-center top-[36px] w-[39px]">Thyroid</p>
-      </div>
-      <div aria-hidden className="absolute border border-[#f2f2f2] border-solid inset-[-1px] pointer-events-none rounded-[9px]" />
+    <div className="absolute left-[20px] top-[524px] flex gap-[10px]">
+      {concernTabs.map(({ label, Icon }, i) => {
+        const selected = i === active;
+        return (
+          <button
+            key={label}
+            onClick={() => setActive(i)}
+            className={`w-[50px] h-[62px] rounded-[12px] flex flex-col items-center justify-start pt-[7px] gap-[4px] border transition-all duration-150 active:scale-[0.96] ${
+              selected
+                ? "bg-gradient-to-b from-[#FFF7DA] to-[#FFEBB0] border-[#FBDB80] shadow-[0_4px_12px_-6px_rgba(251,197,45,0.7)]"
+                : "bg-white border-[#EEF0F4] shadow-[0_1px_2px_rgba(16,24,40,0.04)]"
+            }`}
+          >
+            <IconTile size={30} radius={9} tint={selected ? "#FFE7A0" : "#F2F5FB"}>
+              <Icon size={19} strokeWidth={1.7} />
+            </IconTile>
+            <p className="font-['Inter',sans-serif] font-semibold text-[8px] leading-[10px] text-[#233F64] text-center">
+              {label}
+            </p>
+          </button>
+        );
+      })}
     </div>
   );
 }
@@ -749,12 +681,7 @@ function IPhone() {
       <Frame7 />
       <Frame9 />
       <Frame11 />
-      <Frame13 />
-      <Frame14 />
-      <Frame16 />
-      <Frame17 />
-      <Frame18 />
-      <Frame19 />
+      <ConcernTabs />
       <Frame20 />
       <Frame25 />
       <Frame30 />
