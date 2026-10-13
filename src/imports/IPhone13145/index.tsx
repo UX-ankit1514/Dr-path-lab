@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router";
 import svgPaths from "./svg-y1tnzv9cz1";
+import { IconTile, HomeTestIcon, LabTestIcon, NearestLabIcon, ReportsIcon, OrdersIcon, PrescriptionIcon } from "../../app/components/PremiumIcons";
 import imgEllipse2 from "./bc6795c3f9efb77817dcb3b3dbe38d68bf6fa299.png";
 import imgRectangle3 from "./1c24b99b20501abeda198347f091d3bd69d1b509.png";
 import imgRectangle from "./7fd13ec66a553f9b81bb70ca7da36e95b46bac80.png";
@@ -173,274 +174,34 @@ function Frame5() {
   );
 }
 
-function Group3() {
-  return (
-    <div className="h-[28.427px] relative shrink-0 w-[28px]">
-      <div className="absolute inset-[-1.51%_-1.54%_-1.51%_-1.53%]">
-        <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 28.8605 29.288">
-          <g id="Group 1">
-            <path d={svgPaths.p3e1b4480} fill="var(--fill-0, #23408E)" id="Vector" stroke="var(--stroke-0, #23408E)" strokeWidth="0.860899" />
-            <path d={svgPaths.p35ee2a40} fill="var(--fill-0, #23408E)" id="Vector_2" stroke="var(--stroke-0, #23408E)" strokeWidth="0.43045" />
-            <path d={svgPaths.p2c102f30} fill="var(--fill-0, #23408E)" id="Vector_3" stroke="var(--stroke-0, #23408E)" strokeWidth="0.860899" />
-          </g>
-        </svg>
-      </div>
-    </div>
-  );
-}
-
-function Frame7() {
-  return (
-    <div className="content-stretch flex items-center p-[8px] relative shrink-0">
-      <Group3 />
-    </div>
-  );
-}
-
-function Frame9({ onClick }: { onClick?: () => void }) {
-  return (
-    <div
-      className="absolute content-stretch flex flex-col items-center left-[20px] top-[20px] w-[62px] cursor-pointer"
-      onClick={onClick}
-    >
-      <Frame7 />
-      <div className="[word-break:break-word] font-['Inter:Medium',sans-serif] font-medium leading-[0] min-w-full not-italic relative shrink-0 text-[11px] text-black text-center w-[min-content] whitespace-pre-wrap">
-        <p className="leading-[normal] mb-0">{`Book home `}</p>
-        <p className="leading-[normal]">Test</p>
-      </div>
-    </div>
-  );
-}
-
-function Group4() {
-  return (
-    <div className="h-[28px] relative shrink-0 w-[39.021px]">
-      <div className="absolute inset-[-1.24%_-0.89%]">
-        <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 39.7179 28.6968">
-          <g id="Group 2">
-            <path d={svgPaths.p1cbb1240} fill="var(--fill-0, #23408E)" id="Vector" stroke="var(--stroke-0, #23408E)" strokeWidth="0.696806" />
-            <path d={svgPaths.p1eee0f00} fill="var(--fill-0, #23408E)" id="Vector_2" stroke="var(--stroke-0, #23408E)" strokeWidth="0.696806" />
-            <path d={svgPaths.pa64dd80} fill="var(--fill-0, #23408E)" id="Vector_3" stroke="var(--stroke-0, #23408E)" strokeWidth="0.696806" />
-            <path d={svgPaths.p232f1400} fill="var(--fill-0, #23408E)" id="Vector_4" stroke="var(--stroke-0, #23408E)" strokeWidth="0.696806" />
-            <path d={svgPaths.p29e79870} fill="var(--fill-0, #23408E)" id="Vector_5" stroke="var(--stroke-0, #23408E)" strokeWidth="0.696806" />
-          </g>
-        </svg>
-      </div>
-    </div>
-  );
-}
-
-function Frame8() {
-  return (
-    <div className="content-stretch flex flex-col items-center justify-center px-[8.75px] relative shrink-0 w-[38.5px]">
-      <Group4 />
-    </div>
-  );
-}
-
-function Frame6() {
-  return (
-    <div className="relative shrink-0 w-full">
-      <div className="flex flex-row items-center size-full">
-        <div className="content-stretch flex items-center p-[8px] relative size-full">
-          <Frame8 />
-        </div>
-      </div>
-    </div>
-  );
-}
-
-function Frame20() {
-  return (
-    <div className="absolute content-stretch flex flex-col items-center left-[153px] top-[20px] w-[54.5px]">
-      <Frame6 />
-      <div className="[word-break:break-word] font-['Inter:Medium',sans-serif] font-medium leading-[0] not-italic relative shrink-0 text-[11px] text-black text-center w-full">
-        <p className="leading-[normal] mb-0">Book Lab</p>
-        <p className="leading-[normal]">Test</p>
-      </div>
-    </div>
-  );
-}
-
-function Group5() {
-  return (
-    <div className="h-[35.306px] relative shrink-0 w-[32px]">
-      <div className="absolute inset-[-0.87%_-0.96%]">
-        <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 32.6165 35.9226">
-          <g id="Group 3">
-            <path d={svgPaths.p2e208f00} fill="var(--fill-0, #23408E)" id="Vector" stroke="var(--stroke-0, #23408E)" strokeWidth="0.616667" />
-            <path d={svgPaths.p9e6d000} fill="var(--fill-0, white)" id="Vector_2" stroke="var(--stroke-0, #23408E)" strokeWidth="0.616667" />
-            <path d={svgPaths.p9262900} fill="var(--fill-0, #23408E)" id="Vector_3" stroke="var(--stroke-0, #23408E)" strokeWidth="0.616667" />
-            <path d={svgPaths.p10e46e80} fill="var(--fill-0, white)" id="Vector_4" stroke="var(--stroke-0, #23408E)" strokeWidth="0.616667" />
-            <path d={svgPaths.p74fe580} fill="var(--fill-0, #23408E)" id="Vector_5" stroke="var(--stroke-0, #23408E)" strokeWidth="0.616667" />
-            <path d={svgPaths.p3dad5fb0} fill="var(--fill-0, white)" id="Vector_6" stroke="var(--stroke-0, #23408E)" strokeWidth="0.616667" />
-            <path d={svgPaths.p2b0c8b00} fill="var(--fill-0, #23408E)" id="Vector_7" stroke="var(--stroke-0, #23408E)" strokeWidth="0.616667" />
-            <path d={svgPaths.p454ad80} fill="var(--fill-0, white)" id="Vector_8" stroke="var(--stroke-0, #23408E)" strokeWidth="0.616667" />
-            <path d={svgPaths.p2db9da00} fill="var(--fill-0, white)" id="Vector_9" stroke="var(--stroke-0, #23408E)" strokeWidth="0.616667" />
-            <path d={svgPaths.p17e02c0} fill="var(--fill-0, white)" id="Vector_10" stroke="var(--stroke-0, #23408E)" strokeWidth="0.616667" />
-            <path d={svgPaths.p268a1b80} fill="var(--fill-0, white)" id="Vector_11" stroke="var(--stroke-0, #23408E)" strokeWidth="0.616667" />
-            <path d={svgPaths.p1fdd4500} fill="var(--fill-0, white)" id="Vector_12" stroke="var(--stroke-0, #23408E)" strokeWidth="0.616667" />
-            <path d={svgPaths.p19bd9d80} fill="var(--fill-0, white)" id="Vector_13" stroke="var(--stroke-0, #23408E)" strokeWidth="0.616667" />
-          </g>
-        </svg>
-      </div>
-    </div>
-  );
-}
-
-function Frame10() {
-  return (
-    <div className="relative shrink-0 w-full">
-      <div className="flex flex-row items-center size-full">
-        <div className="content-stretch flex items-center px-[8px] py-[5px] relative size-full">
-          <Group5 />
-        </div>
-      </div>
-    </div>
-  );
-}
-
-function Frame19() {
-  return (
-    <div className="absolute content-stretch flex flex-col items-start left-[278px] top-[20px] w-[51px]">
-      <Frame10 />
-      <p className="[word-break:break-word] font-['Inter:Medium',sans-serif] font-medium leading-[normal] not-italic relative shrink-0 text-[11px] text-black text-center w-full">NearestLab</p>
-    </div>
-  );
-}
-
-function Frame12() {
-  return (
-    <div className="col-1 h-[42.627px] ml-0 mt-0 relative row-1 w-[26.207px]">
-      <div className="absolute inset-[-0.59%_-0.95%]">
-        <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 26.707 43.1274">
-          <g id="Frame 13">
-            <path d={svgPaths.p36cb6480} fill="var(--fill-0, #23408E)" id="Vector" stroke="var(--stroke-0, #23408E)" strokeWidth="0.5" />
-            <path d={svgPaths.p2f235800} fill="var(--fill-0, #FEFEFE)" id="Vector_2" stroke="var(--stroke-0, #23408E)" strokeWidth="0.5" />
-            <path d={svgPaths.p26849200} fill="var(--fill-0, #23408E)" id="Vector_3" stroke="var(--stroke-0, #23408E)" strokeWidth="0.5" />
-            <path d={svgPaths.p3f344c00} fill="var(--fill-0, #FEFEFE)" id="Vector_4" stroke="var(--stroke-0, #23408E)" strokeWidth="0.5" />
-            <path d={svgPaths.p177e7e80} fill="var(--fill-0, #23408E)" id="Vector_5" stroke="var(--stroke-0, #23408E)" strokeWidth="0.5" />
-            <path d={svgPaths.pe2ea300} fill="var(--fill-0, #FEFEFE)" id="Vector_6" stroke="var(--stroke-0, #23408E)" strokeWidth="0.5" />
-            <path d={svgPaths.p1c101380} fill="var(--fill-0, #23408E)" id="Vector_7" stroke="var(--stroke-0, #23408E)" strokeWidth="0.5" />
-            <path d={svgPaths.p31a4a100} fill="var(--fill-0, #FEFEFE)" id="Vector_8" stroke="var(--stroke-0, #23408E)" strokeWidth="0.5" />
-            <path d={svgPaths.p1a3da900} fill="var(--fill-0, #FEFEFE)" id="Vector_9" stroke="var(--stroke-0, #23408E)" strokeWidth="0.5" />
-            <path d={svgPaths.p2363b00} fill="var(--fill-0, #FEFEFE)" id="Vector_10" stroke="var(--stroke-0, #23408E)" strokeWidth="0.5" />
-            <path d={svgPaths.p14d9ec00} fill="var(--fill-0, #23408E)" id="Vector_11" stroke="var(--stroke-0, #23408E)" strokeWidth="0.5" />
-            <path d={svgPaths.p2e84a2f1} fill="var(--fill-0, #FEFEFE)" id="Vector_12" stroke="var(--stroke-0, #23408E)" strokeWidth="0.5" />
-          </g>
-        </svg>
-      </div>
-    </div>
-  );
-}
-
-function Group6() {
-  return (
-    <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid leading-[0] place-items-start relative shrink-0">
-      <Frame12 />
-    </div>
-  );
-}
-
-function Frame11() {
-  return (
-    <div className="content-stretch flex items-center p-[8px] relative shrink-0">
-      <Group6 />
-    </div>
-  );
-}
-
-function Frame16() {
-  return (
-    <div className="absolute content-stretch flex flex-col items-center left-[20px] top-[112px] w-[65px]">
-      <Frame11 />
-      <p className="[word-break:break-word] font-['Inter:Medium',sans-serif] font-medium leading-[normal] min-w-full not-italic relative shrink-0 text-[11px] text-black text-center w-[min-content]">My Reports</p>
-    </div>
-  );
-}
-
-function Frame14() {
-  return (
-    <div className="h-[35.751px] relative shrink-0 w-[24.302px]">
-      <div className="absolute inset-[-0.78%_-1.15%]">
-        <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 24.8624 36.3115">
-          <g id="Group 5">
-            <path d={svgPaths.p3677e100} fill="var(--fill-0, #23408E)" id="Vector" stroke="var(--stroke-0, #23408E)" strokeWidth="0.560807" />
-            <path d={svgPaths.p20926e00} fill="var(--fill-0, #23408E)" id="Vector_2" stroke="var(--stroke-0, #23408E)" strokeWidth="0.560807" />
-            <path d={svgPaths.p37402a80} fill="var(--fill-0, #23408E)" id="Vector_3" stroke="var(--stroke-0, #23408E)" strokeWidth="0.560807" />
-          </g>
-        </svg>
-      </div>
-    </div>
-  );
-}
-
-function Frame13() {
-  return (
-    <div className="content-stretch flex items-center p-[8px] relative shrink-0">
-      <Frame14 />
-    </div>
-  );
-}
-
-function Frame17() {
-  return (
-    <div className="absolute content-stretch flex flex-col gap-[6px] items-center left-[148px] top-[112.88px] w-[55px]">
-      <Frame13 />
-      <p className="[word-break:break-word] font-['Inter:Medium',sans-serif] font-medium leading-[normal] min-w-full not-italic relative shrink-0 text-[11px] text-black text-center w-[min-content]">My Orders</p>
-    </div>
-  );
-}
-
-function Frame21() {
-  return (
-    <div className="h-[27.489px] relative shrink-0 w-[28.869px]">
-      <div className="absolute inset-[-0.52%_-0.5%]">
-        <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 29.157 27.7777">
-          <g id="Group 6">
-            <path d={svgPaths.p19a0a300} fill="var(--fill-0, #23408E)" id="Vector" stroke="var(--stroke-0, #23408E)" strokeWidth="0.288303" />
-            <path d={svgPaths.p3e387400} fill="var(--fill-0, #23408E)" id="Vector_2" stroke="var(--stroke-0, #23408E)" strokeWidth="0.288303" />
-            <path d={svgPaths.p2e52f100} fill="var(--fill-0, #23408E)" id="Vector_3" stroke="var(--stroke-0, #23408E)" strokeWidth="0.288303" />
-            <path d={svgPaths.p3559e00} fill="var(--fill-0, #23408E)" id="Vector_4" stroke="var(--stroke-0, #23408E)" strokeWidth="0.288303" />
-          </g>
-        </svg>
-      </div>
-    </div>
-  );
-}
-
-function Frame15() {
-  return (
-    <div className="content-stretch flex items-center justify-center p-[8px] relative shrink-0">
-      <Frame21 />
-    </div>
-  );
-}
-
-function Frame18() {
-  return (
-    <div className="absolute content-stretch flex flex-col gap-[2px] items-center left-[265px] top-[112.14px] w-[64px]">
-      <Frame15 />
-      <div className="[word-break:break-word] font-['Inter:Medium',sans-serif] font-medium leading-[0] min-w-full not-italic relative shrink-0 text-[11px] text-black text-center w-[min-content]">
-        <p className="leading-[normal] mb-0">Upload</p>
-        <p className="leading-[normal]">Prescription</p>
-      </div>
-    </div>
-  );
-}
+const quickActions = [
+  { label: "Book Home Test", Icon: HomeTestIcon, tint: "#FFF1BF", nav: true },
+  { label: "Book Lab Test", Icon: LabTestIcon, tint: "#E4ECFF" },
+  { label: "Nearest Lab", Icon: NearestLabIcon, tint: "#FFE7DC" },
+  { label: "My Reports", Icon: ReportsIcon, tint: "#E2F6EA" },
+  { label: "My Orders", Icon: OrdersIcon, tint: "#F0E8FF" },
+  { label: "Upload Prescription", Icon: PrescriptionIcon, tint: "#E0F3FA" },
+];
 
 function Frame22({ onBookHomeTest }: { onBookHomeTest?: () => void }) {
   return (
-    <div className="absolute bg-white h-[204px] left-[20px] rounded-[10px] top-[377px] w-[350px]">
-      <div className="overflow-clip relative rounded-[inherit] size-full">
-        <Frame9 onClick={onBookHomeTest} />
-        <Frame20 />
-        <Frame19 />
-        <Frame16 />
-        <Frame17 />
-        <Frame18 />
+    <div className="absolute bg-white h-[204px] left-[20px] rounded-[16px] top-[377px] w-[350px] border border-[#F1F2F6] shadow-[0_1px_2px_rgba(16,24,40,0.04),0_8px_24px_-12px_rgba(35,64,142,0.16)]">
+      <div className="grid grid-cols-3 gap-y-[14px] px-[8px] pt-[18px]">
+        {quickActions.map(({ label, Icon, tint, nav }) => (
+          <button
+            key={label}
+            onClick={nav ? onBookHomeTest : undefined}
+            className="flex flex-col items-center gap-[7px] active:scale-[0.96] transition-transform duration-150"
+          >
+            <IconTile size={50} radius={15} tint={tint}>
+              <Icon size={28} />
+            </IconTile>
+            <p className="font-['Inter',sans-serif] font-medium text-[11px] leading-[13px] text-[#233F64] text-center w-[88px] h-[26px]">
+              {label}
+            </p>
+          </button>
+        ))}
       </div>
-      <div aria-hidden className="absolute border border-[#f4f4f4] border-solid inset-[-0.5px] pointer-events-none rounded-[10.5px] shadow-[0px_0px_2px_0px_rgba(0,0,0,0.25)]" />
     </div>
   );
 }

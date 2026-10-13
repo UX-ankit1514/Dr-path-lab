@@ -445,22 +445,22 @@ export const testCatalog: TestItem[] = [
 
 // ── Popular Searches ──
 export const popularSearches = [
-  { label: "Dengue Test", icon: "🦟" },
-  { label: "Thyroid Profile", icon: "🦋" },
-  { label: "CBC", icon: "🩸" },
-  { label: "Diabetes Test", icon: "💉" },
-  { label: "Vitamin D", icon: "☀️" },
-  { label: "Full Body Checkup", icon: "🏥" },
-  { label: "Liver Function", icon: "🫁" },
-  { label: "Lipid Profile", icon: "❤️" },
+  { label: "Dengue Test", icon: "mosquito" },
+  { label: "Thyroid Profile", icon: "thyroid" },
+  { label: "CBC", icon: "drop" },
+  { label: "Diabetes Test", icon: "syringe" },
+  { label: "Vitamin D", icon: "sun" },
+  { label: "Full Body Checkup", icon: "shield" },
+  { label: "Liver Function", icon: "liver" },
+  { label: "Lipid Profile", icon: "heart" },
 ];
 
 // ── Health Concern Categories ──
 export const healthConcerns = [
-  { label: "Fever & Infections", query: "fever", color: "#FF6B6B" },
-  { label: "Diabetes & Sugar", query: "diabetes", color: "#4ECDC4" },
-  { label: "Heart & Cholesterol", query: "cholesterol", color: "#FF8E53" },
-  { label: "Thyroid Disorders", query: "thyroid", color: "#A78BFA" },
-  { label: "Vitamin Deficiency", query: "vitamin", color: "#F59E0B" },
-  { label: "Kidney & Liver", query: "kidney liver", color: "#10B981" },
+  { label: "Fever & Infections", query: "fever", icon: "thermometer", color: "#FF6B6B" },
+  { label: "Diabetes & Sugar", query: "diabetes", icon: "drop", color: "#4ECDC4" },
+  { label: "Heart & Cholesterol", query: "cholesterol", icon: "heart", color: "#FF8E53" },
+  { label: "Thyroid Disorders", query: "thyroid", icon: "thyroid", color: "#A78BFA" },
+  { label: "Vitamin Deficiency", query: "vitamin", icon: "sun", color: "#F59E0B" },
+  { label: "Kidney & Liver", query: "kidney liver", icon: "kidney", color: "#10B981" },
 ];

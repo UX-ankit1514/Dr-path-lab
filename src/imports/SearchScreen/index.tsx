@@ -3,6 +3,21 @@ import { useNavigate } from "react-router";
 import { StatusBar } from "../../app/components/StatusBar";
 import { smartSearch, getDidYouMean, SearchResult } from "./fuzzySearch";
 import { popularSearches, healthConcerns, TestItem } from "./searchData";
+import {
+  IconTile, MosquitoIcon, ThyroidIcon, DropIcon, SyringeIcon, SunIcon, ShieldIcon,
+  LiverIcon, HeartIcon, ThermometerIcon, KidneyIcon, IconProps,
+} from "../../app/components/PremiumIcons";
+
+const topicIcons: Record<string, (p: IconProps) => JSX.Element> = {
+  mosquito: MosquitoIcon, thyroid: ThyroidIcon, drop: DropIcon, syringe: SyringeIcon,
+  sun: SunIcon, shield: ShieldIcon, liver: LiverIcon, heart: HeartIcon,
+  thermometer: ThermometerIcon, kidney: KidneyIcon,
+};
+
+function TopicIcon({ name, ...props }: IconProps & { name: string }) {
+  const Icon = topicIcons[name];
+  return Icon ? <Icon {...props} /> : null;
+}
 
 /* ─────────────────────────────────────────────
    Persistent recent-searches (localStorage)
@@ -339,7 +354,7 @@ export default function SearchScreen() {
                     onClick={() => handleSearch(p.label)}
                     className="flex items-center gap-[5px] bg-[#FFF8E1] border border-[#FDE9B6] rounded-[20px] px-[12px] py-[7px] active:scale-[0.97] transition-transform"
                   >
-                    <span className="text-[12px]">{p.icon}</span>
+                    <TopicIcon name={p.icon} size={15} strokeWidth={1.7} />
                     <p className="font-['Inter',sans-serif] font-medium text-[11px] text-[#233F64]">
                       {p.label}
                     </p>
@@ -358,10 +373,12 @@ export default function SearchScreen() {
                   <button
                     key={c.label}
                     onClick={() => handleSearch(c.query)}
-                    className="flex items-center gap-[8px] bg-white border border-[#F0F0F0] rounded-[10px] px-[12px] py-[12px] active:scale-[0.98] transition-transform"
+                    className="flex items-center gap-[8px] bg-white border border-[#F0F0F0] rounded-[10px] px-[10px] py-[9px] active:scale-[0.98] transition-transform"
                     style={{ boxShadow: "0 1px 3px rgba(0,0,0,0.04)" }}
                   >
-                    <div className="w-[8px] h-[8px] rounded-full shrink-0" style={{ backgroundColor: c.color }} />
+                    <IconTile size={30} radius={9} tint={`${c.color}2E`}>
+                      <TopicIcon name={c.icon} size={18} strokeWidth={1.7} accent={c.color} />
+                    </IconTile>
                     <p className="font-['Inter',sans-serif] font-medium text-[10px] text-[#374151] text-left leading-[1.3]">
                       {c.label}
                     </p>
@@ -454,7 +471,7 @@ export default function SearchScreen() {
                     onClick={() => handleSearch(p.label)}
                     className="flex items-center gap-[5px] bg-[#FFF8E1] border border-[#FDE9B6] rounded-[20px] px-[12px] py-[7px] active:scale-[0.97] transition-transform"
                   >
-                    <span className="text-[12px]">{p.icon}</span>
+                    <TopicIcon name={p.icon} size={15} strokeWidth={1.7} />
                     <p className="font-['Inter',sans-serif] font-medium text-[11px] text-[#233F64]">{p.label}</p>
                   </button>
                 ))}
@@ -471,10 +488,12 @@ export default function SearchScreen() {
                   <button
                     key={c.label}
                     onClick={() => handleSearch(c.query)}
-                    className="flex items-center gap-[8px] bg-white border border-[#F0F0F0] rounded-[10px] px-[12px] py-[12px] active:scale-[0.98] transition-transform"
+                    className="flex items-center gap-[8px] bg-white border border-[#F0F0F0] rounded-[10px] px-[10px] py-[9px] active:scale-[0.98] transition-transform"
                     style={{ boxShadow: "0 1px 3px rgba(0,0,0,0.04)" }}
                   >
-                    <div className="w-[8px] h-[8px] rounded-full shrink-0" style={{ backgroundColor: c.color }} />
+                    <IconTile size={30} radius={9} tint={`${c.color}2E`}>
+                      <TopicIcon name={c.icon} size={18} strokeWidth={1.7} accent={c.color} />
+                    </IconTile>
                     <p className="font-['Inter',sans-serif] font-medium text-[10px] text-[#374151] text-left leading-[1.3]">
                       {c.label}
                     </p>
